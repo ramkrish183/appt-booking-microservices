@@ -1,0 +1,1 @@
+alter table doctor_catalog rename totalAppts to total_appts;
