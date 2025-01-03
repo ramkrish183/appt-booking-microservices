@@ -1,4 +1,4 @@
-package com.rameshj.doctorcatalog.domain;
+package com.rameshj.booking.doctorcatalog.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMin;

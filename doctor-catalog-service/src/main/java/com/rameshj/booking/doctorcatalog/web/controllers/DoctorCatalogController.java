@@ -1,7 +1,7 @@
-package com.rameshj.doctorcatalog.web.controllers;
+package com.rameshj.booking.doctorcatalog.web.controllers;
 
-import com.rameshj.doctorcatalog.domain.Doctor;
-import com.rameshj.doctorcatalog.service.DoctorCatalogService;
+import com.rameshj.booking.doctorcatalog.domain.Doctor;
+import com.rameshj.booking.doctorcatalog.service.DoctorCatalogService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

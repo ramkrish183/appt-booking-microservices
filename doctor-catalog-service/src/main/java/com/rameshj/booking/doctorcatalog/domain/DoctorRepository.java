@@ -1,4 +1,4 @@
-package com.rameshj.doctorcatalog.domain;
+package com.rameshj.booking.doctorcatalog.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,4 +1,4 @@
-package com.rameshj.doctorcatalog;
+package com.rameshj.booking.doctorcatalog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

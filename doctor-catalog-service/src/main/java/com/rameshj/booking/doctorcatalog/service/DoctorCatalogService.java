@@ -1,8 +1,8 @@
-package com.rameshj.doctorcatalog.service;
+package com.rameshj.booking.doctorcatalog.service;
 
-import com.rameshj.doctorcatalog.domain.Doctor;
-import com.rameshj.doctorcatalog.domain.DoctorMapper;
-import com.rameshj.doctorcatalog.domain.DoctorRepository;
+import com.rameshj.booking.doctorcatalog.domain.Doctor;
+import com.rameshj.booking.doctorcatalog.domain.DoctorMapper;
+import com.rameshj.booking.doctorcatalog.domain.DoctorRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

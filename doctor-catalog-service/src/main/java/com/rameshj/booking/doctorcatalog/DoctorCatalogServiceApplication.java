@@ -1,4 +1,4 @@
-package com.rameshj.doctorcatalog;
+package com.rameshj.booking.doctorcatalog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
