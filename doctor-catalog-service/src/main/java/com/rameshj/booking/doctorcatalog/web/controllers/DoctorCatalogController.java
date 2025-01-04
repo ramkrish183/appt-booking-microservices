@@ -3,6 +3,7 @@ package com.rameshj.booking.doctorcatalog.web.controllers;
 import com.rameshj.booking.doctorcatalog.domain.Doctor;
 import com.rameshj.booking.doctorcatalog.service.DoctorCatalogService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,6 +23,11 @@ public class DoctorCatalogController {
     @GetMapping
     public List<Doctor> getDoctors(){
         return doctorCatalogService.getDoctors();
+    }
+
+    @GetMapping("/{doctorId}")
+    public Doctor getDoctor(@PathVariable(name = "doctorId") Long doctorId){
+        return doctorCatalogService.getDoctor(doctorId);
     }
 
 }

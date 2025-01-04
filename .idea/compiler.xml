@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="doctor-catalog-service" />
+        <module name="appt-booking-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -15,6 +16,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="appt-booking-service" options="-parameters" />
       <module name="doctor-catalog-service" options="-parameters" />
     </option>
   </component>

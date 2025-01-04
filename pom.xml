@@ -19,6 +19,7 @@
 
     <modules>
     <module>doctor-catalog-service</module>
+    <module>appt-booking-service</module>
     </modules>
 
     <build>

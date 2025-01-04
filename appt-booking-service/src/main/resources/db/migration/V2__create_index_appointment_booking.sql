@@ -1,0 +1,1 @@
+CREATE INDEX doctor_id_idx ON appointment_booking(doctor_id);
