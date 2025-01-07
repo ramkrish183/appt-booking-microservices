@@ -3,6 +3,8 @@ package com.rameshj.booking.domain;
 import jakarta.persistence.*;
 
 import java.sql.Date;
+import java.time.Instant;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "appointment_booking")
@@ -16,24 +18,24 @@ public class AppointmentBookingEntity {
     private Long doctorId;
 
     @Column(name="checkin_time")
-    private Date checkinTime;
+    private LocalDateTime checkinTime;
 
     @Column(name="checkout_time")
-    private Date checkoutTime;
+    private LocalDateTime checkoutTime;
 
-    public Date getCheckoutTime() {
+    public LocalDateTime getCheckoutTime() {
         return checkoutTime;
     }
 
-    public void setCheckoutTime(Date checkoutTime) {
+    public void setCheckoutTime(LocalDateTime checkoutTime) {
         this.checkoutTime = checkoutTime;
     }
 
-    public Date getCheckinTime() {
+    public LocalDateTime getCheckinTime() {
         return checkinTime;
     }
 
-    public void setCheckinTime(Date checkinTime) {
+    public void setCheckinTime(LocalDateTime checkinTime) {
         this.checkinTime = checkinTime;
     }
 
@@ -51,5 +53,14 @@ public class AppointmentBookingEntity {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public AppointmentBookingEntity(Long doctorId, LocalDateTime checkinTime, LocalDateTime checkoutTime) {
+        this.doctorId = doctorId;
+        this.checkinTime = checkinTime;
+        this.checkoutTime = checkoutTime;
+    }
+
+    public AppointmentBookingEntity() {
     }
 }
