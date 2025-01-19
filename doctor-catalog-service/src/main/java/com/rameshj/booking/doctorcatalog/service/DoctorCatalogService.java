@@ -4,6 +4,8 @@ import com.rameshj.booking.doctorcatalog.domain.Doctor;
 import com.rameshj.booking.doctorcatalog.domain.DoctorEntity;
 import com.rameshj.booking.doctorcatalog.domain.DoctorMapper;
 import com.rameshj.booking.doctorcatalog.domain.DoctorRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,7 +13,7 @@ import java.util.Optional;
 
 @Service
 public class DoctorCatalogService {
-
+    private static final Logger LOG = LoggerFactory.getLogger(DoctorCatalogService.class);
     private final DoctorRepository doctorRepository;
 
     public DoctorCatalogService(DoctorRepository doctorRepository) {
