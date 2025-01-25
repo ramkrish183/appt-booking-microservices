@@ -1,4 +1,7 @@
 package com.rameshj.booking.domain;
 
-public record BookingRequest(Long doctorId, int numberOfAppointments) {
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
+public record BookingRequest(@NotNull  Long doctorId, int numberOfAppointments) {
 }

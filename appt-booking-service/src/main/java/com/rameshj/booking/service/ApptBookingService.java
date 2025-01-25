@@ -39,9 +39,12 @@ public class ApptBookingService {
         return appointmentBookingRepository.currentAppointmentCount(doctorId);
     }
 
-    public String bookAppointments(Long doctorId, int numberOfAppts){
+    public String bookAppointments(Long doctorId, int numberOfAppts) throws Exception{
+        Optional<Doctor> optional=doctorCatalogServiceClient.getDoctorById(doctorId);
+        if(optional.isEmpty()) throw new Exception("Doctor didnt exist for id "+doctorId);
         try {
-            for(int i=1;i<=numberOfAppts;i++){
+            int availableAppoints = numberOfAppts - currentAppointmentCount(doctorId);
+            for(int i=1;i<=availableAppoints;i++){
                 appointmentBookingRepository.save(new AppointmentBookingEntity(doctorId, LocalDateTime.now(),null ));
             }
         }
